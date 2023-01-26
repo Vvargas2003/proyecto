@@ -23,4 +23,10 @@ export class LibraryService {
     )
   }
 
+  getBooks(){
+    return fetch("https://librarypca.fly.dev/books").then(
+      allBooks => allBooks.json()
+    );
+  }
+
 }
